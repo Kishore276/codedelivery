@@ -1,0 +1,466 @@
+/* Base Neon Effects - Reduced Intensity */
+.neon-text {
+  text-shadow: 0 0 3px currentColor;
+}
+
+.neon-text-blue {
+  color: #60A5FA;
+  text-shadow: 0 0 5px #3B82F6, 0 0 10px #3B82F6;
+}
+
+.neon-text-green {
+  color: #34D399;
+  text-shadow: 0 0 5px #10B981, 0 0 10px #10B981;
+}
+
+.neon-glow {
+  box-shadow: 0 0 5px currentColor;
+}
+
+.neon-button-blue {
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
+}
+
+.neon-button-green {
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.3);
+}
+
+.neon-button-gradient {
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.2);
+}
+
+.neon-card {
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.05);
+}
+
+.neon-card:hover {
+  box-shadow: 0 0 15px rgba(59, 130, 246, 0.1);
+}
+
+/* Grid Pattern */
+.bg-grid-pattern {
+  background-image: 
+    linear-gradient(rgba(59, 130, 246, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59, 130, 246, 0.05) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Continuous Animations */
+@keyframes float-neon {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  33% {
+    transform: translateY(-20px) rotate(120deg);
+  }
+  66% {
+    transform: translateY(-10px) rotate(240deg);
+  }
+}
+
+@keyframes float-neon-delayed {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  33% {
+    transform: translateY(-15px) rotate(-120deg);
+  }
+  66% {
+    transform: translateY(-25px) rotate(-240deg);
+  }
+}
+
+@keyframes float-terminal {
+  0%, 100% {
+    transform: translateY(0px) rotate(3deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(3deg);
+  }
+}
+
+@keyframes float-device {
+  0%, 100% {
+    transform: translateY(0px) rotate(-12deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(-12deg);
+  }
+}
+
+@keyframes float-icon {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-8px) scale(1.05);
+  }
+}
+
+@keyframes float-icon-delayed {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-12px) scale(1.05);
+  }
+}
+
+@keyframes float-icon-slow {
+  0%, 100% {
+    transform: translateY(0px) scale(1) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-6px) scale(1.02) rotate(180deg);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
+  }
+}
+
+@keyframes pulse-glow-delayed {
+  0%, 100% {
+    box-shadow: 0 0 5px rgba(16, 185, 129, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 10px rgba(16, 185, 129, 0.3);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    text-shadow: 0 0 5px currentColor;
+  }
+  50% {
+    text-shadow: 0 0 8px currentColor, 0 0 12px currentColor;
+  }
+}
+
+@keyframes glow-delayed {
+  0%, 100% {
+    text-shadow: 0 0 5px currentColor;
+  }
+  50% {
+    text-shadow: 0 0 8px currentColor, 0 0 12px currentColor;
+  }
+}
+
+@keyframes bounce-subtle {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+}
+
+@keyframes bounce-x {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(2px);
+  }
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse-slow {
+  0%, 100% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes float-slow-delayed {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+@keyframes bounce-slow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes type-writer {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes skill-bar {
+  from {
+    width: 0;
+  }
+  to {
+    width: var(--skill-width, 0%);
+  }
+}
+
+/* Animation Classes */
+.animate-float-neon {
+  animation: float-neon 8s ease-in-out infinite;
+}
+
+.animate-float-neon-delayed {
+  animation: float-neon-delayed 10s ease-in-out infinite;
+}
+
+.animate-float-terminal {
+  animation: float-terminal 6s ease-in-out infinite;
+}
+
+.animate-float-device {
+  animation: float-device 7s ease-in-out infinite;
+}
+
+.animate-float-icon {
+  animation: float-icon 4s ease-in-out infinite;
+}
+
+.animate-float-icon-delayed {
+  animation: float-icon-delayed 5s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+.animate-float-icon-slow {
+  animation: float-icon-slow 6s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+.animate-pulse-glow-delayed {
+  animation: pulse-glow-delayed 4s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+.animate-glow {
+  animation: glow 4s ease-in-out infinite;
+}
+
+.animate-glow-delayed {
+  animation: glow-delayed 5s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+.animate-bounce-subtle {
+  animation: bounce-subtle 3s ease-in-out infinite;
+}
+
+.animate-bounce-x {
+  animation: bounce-x 2s ease-in-out infinite;
+}
+
+.animate-spin-slow {
+  animation: spin-slow 8s linear infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 4s ease-in-out infinite;
+}
+
+.animate-float-slow {
+  animation: float-slow 6s ease-in-out infinite;
+}
+
+.animate-float-slow-delayed {
+  animation: float-slow-delayed 8s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 4s ease-in-out infinite;
+}
+
+.animate-type-writer {
+  animation: type-writer 2s steps(40, end), fade-in 0.5s;
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 1s ease-out;
+}
+
+.animate-slide-down {
+  animation: slide-down 0.3s ease-out;
+}
+
+.animate-skill-bar {
+  animation: skill-bar 2s ease-out forwards;
+}
+
+/* Scroll Animations */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.animate-on-scroll.animate-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Continuous Background Animations */
+.continuous-float {
+  animation: float-slow 6s ease-in-out infinite;
+}
+
+/* Hover Effects with Subtle Neon */
+.hover-neon {
+  transition: all 0.3s ease;
+}
+
+.hover-neon:hover {
+  transform: translateY(-3px) scale(1.01);
+  box-shadow: 0 8px 25px rgba(59, 130, 246, 0.15);
+}
+
+/* Responsive Animations */
+@media (max-width: 768px) {
+  .animate-on-scroll {
+    transform: translateY(20px);
+  }
+  
+  .neon-text-blue,
+  .neon-text-green {
+    text-shadow: 0 0 3px currentColor, 0 0 6px currentColor;
+  }
+  
+  .animate-float-neon,
+  .animate-float-neon-delayed {
+    animation-duration: 6s;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  .neon-text-blue,
+  .neon-text-green,
+  .neon-glow {
+    text-shadow: none !important;
+    box-shadow: none !important;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #3B82F6, #10B981);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #60A5FA, #34D399);
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Loading States */
+.loading-neon {
+  background: linear-gradient(90deg, 
+    rgba(59, 130, 246, 0.05) 25%, 
+    rgba(16, 185, 129, 0.1) 50%, 
+    rgba(59, 130, 246, 0.05) 75%);
+  background-size: 200% 100%;
+  animation: loading-neon 2s infinite;
+}
+
+@keyframes loading-neon {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
